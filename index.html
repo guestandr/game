@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Игра "Найди все числа" на JavaScript</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+  <div class="items">
+  <h1>Игра "Найди числа"</h1>
+  <div class="item-game">
+  <header>
+        <div>Общее время игры (секунд):<br><div class="time"></div></div>
+        <div>Найдите число<br><div id="currentNumber">1</div></div>
+        <div>Таймер времени, чтобы найти число (секунд):<br><div class="timer"></div>
+        </div>
+  </header>
+  <main class="game-field">
+  </main> 
+  </div>
+  <div class="item-menu">
+    <ul>
+      <li class="startButton">Начать игру</li>
+      <li class="level-game">Выбрать уровень</li>
+      <li class="about-game">Об игре</li>
+      <li  class="level-game">Таблица результатов</li>
+    </ul>
+  </div>
+  <div class="item-result">
+    <div>
+      <span  id="topTime"></span>
+    </div>
+  </div>
+  <div class="game-lost">
+    <h2>Увы! Не повезло! Вы проиграли.</h2>
+  </div>
+    <div class="game-win">
+      <h2>Ура! Поздравляю! Вы выиграли!</h2>
+      <div class="record">Рекорд!</div>
+      <div>Все числа найдены за:</div>
+      <div class="result-win"></div>
+      <div>секунд(ы)</div>
+    </div>
+  <div class="item-about">
+       <h2>Об игре</h2> 
+       Игра на развитие внимания, цель игры: нужно щелкнуть мышкой по порядку по числам от 1 до 25. Кто быстрее нашел все числа по порядку, тот и выиграл.
+  </div>
+  <div class="item-level">
+      <ul>
+        <li class="easy">Легкий</li>
+        <li class="middle">Средний</li>
+        <li class="hard">Сложный</li>
+      </ul>
+  </div>
+   <div class="item-exit">Выйти</div>
+  </div>
+  </div>
+  <script src="./game.js"></script>
+</body>
