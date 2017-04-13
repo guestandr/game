@@ -87,7 +87,7 @@ function handleDownClick() {
   if(num == size*size && numb == size*size) {
     table.remove();
     isStarted = false;
-    let currentTime = Math.floor((Date.now() - startedAt)/1000);
+    let currentTime = Math.floor((Date.now() -  startedAtTotal)/1000);
     updateTime();
     clearInterval(timeInterval);
     clearInterval(timerInterval);
