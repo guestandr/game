@@ -98,6 +98,7 @@ function handleDownClick() {
     exit.style.display='block';
     gameRecord.style.display='none';
     if (topTime>currentTime) {
+      topTime = currentTime;
       saveTopTime(topTime);
       gameRecord.style.display='block';
       sound('./sound/record.mp3');
